@@ -1,0 +1,6 @@
+oracle:
+  hosts:
+    192.168.0.24:
+      ansible_become: true
+      ansible_user: user1
+
