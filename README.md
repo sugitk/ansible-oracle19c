@@ -8,9 +8,9 @@ These roles configure Oracle Database prerequisites and install it for CentOS 7.
 - Ansible 2.9
 - Installation media file distributed by oracle.com
 
-## Create VM and install the Oracle Database software
+## Install the Oracle Database software to a target host
 
-Place the installation media file into roles/oracle19c/files/ and run vagrant as follows;
+Place the installation media file into roles/oracle19c/files/, configure your inventory and run ansible-playbook.
 
 ```
 $ cp /foo/bar/LINUX.X64_193000_db_home.zip roles/oracle19c/files/
