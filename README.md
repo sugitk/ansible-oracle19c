@@ -1,4 +1,4 @@
-# Install Oracle Database 18c with Ansible
+# Install Oracle Database 19c with Ansible
 
 These roles configure Oracle Database prerequisites and install it for CentOS 7.
 
