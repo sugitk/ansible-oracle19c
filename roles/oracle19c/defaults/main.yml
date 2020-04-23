@@ -24,6 +24,7 @@ oracle_user: oracle
 # hashed password for the oracle user
 # python -c 'import crypt; print crypt.crypt("oracle", "$1$salt$")'
 oracle_pass: $1$salt$6hY7SFGTovD5BRJ.4zYAd1
+oracle_pass_raw: oracle
 
 # primary oracle group
 oracle_group: oinstall

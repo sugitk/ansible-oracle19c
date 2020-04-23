@@ -219,7 +219,7 @@
       dest: "{{ oracle_db_home }}"
 
   - name: runInstaller
-    command: ./runInstaller -responseFile /home/{{ oracle_user }}/db_install.rsp -silent
+    shell: echo "{{ oracle_pass_raw }}" | ./runInstaller -responseFile /home/{{ oracle_user }}/db_install.rsp -silent
     ignore_errors: yes
     args:
       chdir: "{{ oracle_db_home }}"
