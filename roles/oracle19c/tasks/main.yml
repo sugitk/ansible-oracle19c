@@ -147,6 +147,12 @@
     - "export PATH=$PATH:$ORACLE_HOME/bin"
     - "export NLS_LANG={{ ora_user_env.NLS_LANG }}"
 
+- name: disable firewalld
+  systemd:
+    name: firewalld
+    state: stopped
+    enabled: false
+
 - name: disable transparent_hugepage
   replace:
     path: /etc/default/grub
@@ -165,7 +171,7 @@
   wait_for_connection: 
     connect_timeout: 5
     sleep: 5
-    delay: 5
+    delay: 20
     timeout: 120
 
 - name: check transparent_hugepage

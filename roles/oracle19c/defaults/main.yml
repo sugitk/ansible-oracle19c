@@ -36,6 +36,6 @@ oracle_dgdba_group: dgdba
 oracle_kmdba_group: kmdba
 oracle_racdba_group: racdba
 
-oracle_groups: dba,backupdba,oper,dgdba,kmdba,racdba
+oracle_groups: wheel,dba,backupdba,oper,dgdba,kmdba,racdba
 
 
