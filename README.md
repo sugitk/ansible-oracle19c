@@ -16,24 +16,3 @@ Place the installation media file into roles/oracle19c/files/ and run vagrant as
 $ cp /foo/bar/LINUX.X64_193000_db_home.zip roles/oracle19c/files/
 $ ansible-playbook -i inventory.yml playbook.yml oracle -k -K
 ```
-
-# To use
-
-```
-$ vagrant ssh
-[vagrant@oracle18c ~]$ su - oracle
-Password: (password is oracle)
-[oracle@oracle18c ~]$ sqlplus / as sysdba
-
-SQL*Plus: Release 18.0.0.0.0 - Production on 火 7月 24 12:10:03 2018
-Version 18.3.0.0.0
-
-Copyright (c) 1982, 2018, Oracle.  All rights reserved.
-
-
-
-Oracle Database 18c Enterprise Edition Release 18.0.0.0.0 - Production
-Version 18.3.0.0.0
-に接続されました。
-SQL> 
-```
